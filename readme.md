@@ -2,6 +2,8 @@
 
 > Return a string joined with a conjunction
 
+[![Build Status](https://travis-ci.org/dustinspecker/conjunction.svg?branch=master)](https://travis-ci.org/dustinspecker/conjunction)
+
 ## Install
 
 In `mix.exs`:

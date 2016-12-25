@@ -19,7 +19,7 @@ defmodule Conjunction.Mixfile do
   end
 
   defp deps do
-    [{:ex_doc, "~> 0.14.5"}]
+    [{:ex_doc, "~> 0.14.5", only: :dev}]
   end
 
   defp description do

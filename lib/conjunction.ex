@@ -1,6 +1,6 @@
 defmodule Conjunction do
   @doc ~S"""
-  Return a string joined with a conjunction
+  Combine a list of strings with a conjunction
 
   ## Examples
 

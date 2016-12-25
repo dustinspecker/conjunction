@@ -24,7 +24,7 @@ defmodule Conjunction.Mixfile do
 
   defp description do
     """
-    Return a string joined with a conjunction
+    Combine a list of strings with a conjunction
     """
   end
 

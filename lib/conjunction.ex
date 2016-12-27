@@ -23,19 +23,16 @@ defmodule Conjunction do
       "red, blue, or white"
   """
   @spec join([String]) :: String.t()
-  def join(words, conjunction \\ "and") do
-    cond do
-      Enum.empty?(words) ->
-        ""
-      length(words) == 1 ->
-        hd(words)
-      length(words) == 2 ->
-        Enum.join(words, " #{conjunction} ")
-      true ->
-        words
-        |> Enum.drop(-1)
-        |> Enum.join(", ")
-        |> Kernel.<>(", #{conjunction} " <> List.last(words))
-    end
+  def join(words, conjunction \\ "and")
+  def join([], _), do: ""
+  def join([word], _), do: word
+  def join([word1, word2], conjunction) do
+    word1 <> " #{conjunction} " <> word2
+  end
+  def join(words, conjunction) do
+    words
+    |> Enum.drop(-1)
+    |> Enum.join(", ")
+    |> Kernel.<>(", #{conjunction} " <> List.last(words))
   end
 end

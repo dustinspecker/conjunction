@@ -10,7 +10,7 @@ In `mix.exs`:
 
 ```elixir
 def deps do
-  [{:conjunction, "~> 1.0.1"}]
+  [{:conjunction, "~> 1.0.2"}]
 end
 ```
 
